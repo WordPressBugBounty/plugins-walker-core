@@ -16,7 +16,7 @@
  * Plugin Name: Walker Core
  * Plugin URI:        https://walkerwp.com/walker-core/
  * Description:       Walker Core is the companion plugin for WalkerWP Themes, which provides core functionality and custom post type for the themes.
- * Version:           1.3.15
+ * Version:           1.3.16
  * Author:            WalkerWp
  * Author URI:        https://walkerwp.com/
  * License:           GPL-2.0+
@@ -72,7 +72,7 @@ if (!function_exists('wc_fs')) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('WALKER_CORE_VERSION', '1.3.15');
+define('WALKER_CORE_VERSION', '1.3.16');
 define('WALKER_CORE_PATH', plugin_dir_path(__FILE__));
 define('WALKER_CORE_URL', plugin_dir_url(__FILE__));
 define('WALKER_CORE_SETUP_TEMPLATE_URL', WALKER_CORE_URL . 'includes/demo-data/');

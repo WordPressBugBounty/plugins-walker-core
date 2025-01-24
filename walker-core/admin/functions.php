@@ -1201,6 +1201,42 @@ function walker_core_get_templates_lists($theme_slug)
                 ),
             );
             break;
+        case "newswp":
+            $demo_templates_lists = array(
+                'blockpage' => array(
+                    'title' => esc_html__('NewsWP', 'walker-core'),/*Title*/
+                    'is_pro' => false,  /*Premium*/
+                    'type' => 'free',
+                    'author' => esc_html__('WalkerWP', 'walker-core'),    /*Author Name*/
+                    'keywords' => array('newswp', 'walker-core'),  /*Search keyword*/
+                    'categories' => array('free'), /*Categories*/
+                    'template_url' => array(
+                        'content' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/free/1/content.json',
+                        'options' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/free/1/options.json',
+                        'widgets' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/free/1/widgets.json'
+                    ),
+                    'screenshot_url' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/free/1/screenshot.png',
+                    'demo_url' => 'https://demo.walkerwp.com/newswp',
+                    'plugins' => ''
+                ),
+                'newswp-pro' => array(
+                    'title' => esc_html__('NewsWP Pro', 'walker-core'),/*Title*/
+                    'is_pro' => true,  /*Premium*/
+                    'type' => 'premium',
+                    'author' => esc_html__('WalkerWP', 'walker-core'),    /*Author Name*/
+                    'keywords' => array('newswp', 'walker-core'),  /*Search keyword*/
+                    'categories' => array('pro'), /*Categories*/
+                    'template_url' => array(
+                        'content' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/pro/1/content.json',
+                        'options' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/pro/1/options.json',
+                        'widgets' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/pro/1/widgets.json'
+                    ),
+                    'screenshot_url' => WALKER_CORE_SETUP_TEMPLATE_URL . '/newswp/pro/1/screenshot.png',
+                    'demo_url' => 'https://demo.walkerwp.com/newswp-pro',
+                    'plugins' => ''
+                ),
+            );
+            break;
         case "newsetmag":
             $demo_templates_lists = array(
                 'blockpage' => array(

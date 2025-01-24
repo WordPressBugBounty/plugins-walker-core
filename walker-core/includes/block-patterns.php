@@ -38,6 +38,11 @@ function walker_core_register_pattern_category()
                 'nexum-pro' => array('label' => __('Nexum: Pro Patterns', 'walker-core')),
             );
             break;
+        case "NewsWP":
+            $block_pattern_categories = array(
+                'newswp-pro' => array('label' => __('NewsWP: Pro Patterns', 'walker-core')),
+            );
+            break;
         case "Newsetmag":
             $block_pattern_categories = array(
                 'newsetmag-pro' => array('label' => __('Newsetmag: Pro Patterns', 'walker-core')),

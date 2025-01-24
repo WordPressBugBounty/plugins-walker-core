@@ -4,7 +4,7 @@ Tags: testimonial, slider, teams, portfolio, faqs, brand-logo-carousel, post-typ
 Requires PHP: 7.3
 Requires at least: 5.9
 Tested up to: 6.6
-Stable tag: 1.3.15
+Stable tag: 1.3.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,11 +32,14 @@ Yes, it is a free plugin.
 This is the companion plugin for themes of WalkerWP so we don't recommended to using with other theme.
 
 == Changelog ==
+= 1.3.16 - 24 January, 2025 =
+* Adding demo importer and pro patterns for theme "NewsWP"
+
 = 1.3.15 - 13 August, 2023 =
 * Adding demo importer for theme "Fundifly Charity"
 
 = 1.3.14 - 29 July, 2023 =
-* Adding demo importer for theme "Nesetmag"
+* Adding demo importer for theme "Newsetmag"
 
 = 1.3.13 - 26 June, 2023 =
 * Adding Pro patterns for Nexum
