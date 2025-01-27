@@ -4,7 +4,7 @@ Tags: testimonial, slider, teams, portfolio, faqs, brand-logo-carousel, post-typ
 Requires PHP: 7.3
 Requires at least: 5.9
 Tested up to: 6.6
-Stable tag: 1.3.16
+Stable tag: 1.3.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Yes, it is a free plugin.
 This is the companion plugin for themes of WalkerWP so we don't recommended to using with other theme.
 
 == Changelog ==
+= 1.3.17 - 27 January, 2025 =
+* Update freemius SDK to 2.11.0
+
 = 1.3.16 - 24 January, 2025 =
 * Adding demo importer and pro patterns for theme "NewsWP"
 

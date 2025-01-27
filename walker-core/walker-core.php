@@ -16,7 +16,7 @@
  * Plugin Name: Walker Core
  * Plugin URI:        https://walkerwp.com/walker-core/
  * Description:       Walker Core is the companion plugin for WalkerWP Themes, which provides core functionality and custom post type for the themes.
- * Version:           1.3.16
+ * Version:           1.3.17
  * Author:            WalkerWp
  * Author URI:        https://walkerwp.com/
  * License:           GPL-2.0+
@@ -25,17 +25,16 @@
  * Domain Path:       /languages
  */
 // If this file is called directly, abort.
-if (!defined('WPINC')) {
+if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if (!function_exists('wc_fs')) {
+if ( ! function_exists( 'wc_fs' ) ) {
 	// Create a helper function for easy SDK access.
-	function wc_fs()
-	{
+	function wc_fs() {
 		global  $wc_fs;
 
-		if (!isset($wc_fs)) {
+		if ( ! isset( $wc_fs ) ) {
 			// Include Freemius SDK.
 			require_once __DIR__ . '/freemius/start.php';
 			$wc_fs = fs_dynamic_init(
@@ -64,7 +63,7 @@ if (!function_exists('wc_fs')) {
 	// Init Freemius.
 	wc_fs();
 	// Signal that SDK was initiated.
-	do_action('wc_fs_loaded');
+	do_action( 'wc_fs_loaded' );
 }
 
 /**
@@ -72,18 +71,17 @@ if (!function_exists('wc_fs')) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('WALKER_CORE_VERSION', '1.3.16');
-define('WALKER_CORE_PATH', plugin_dir_path(__FILE__));
-define('WALKER_CORE_URL', plugin_dir_url(__FILE__));
-define('WALKER_CORE_SETUP_TEMPLATE_URL', WALKER_CORE_URL . 'includes/demo-data/');
-define('WALKER_CORE_SETUP_SCRIPT_PREFIX', (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : ''));
+define( 'WALKER_CORE_VERSION', '1.3.17' );
+define( 'WALKER_CORE_PATH', plugin_dir_path( __FILE__ ) );
+define( 'WALKER_CORE_URL', plugin_dir_url( __FILE__ ) );
+define( 'WALKER_CORE_SETUP_TEMPLATE_URL', WALKER_CORE_URL . 'includes/demo-data/' );
+define( 'WALKER_CORE_SETUP_SCRIPT_PREFIX', ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '' ) );
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-walker-core-activator.php
  */
-function activate_walker_core()
-{
-	require_once plugin_dir_path(__FILE__) . 'includes/class-walker-core-activator.php';
+function activate_walker_core() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-walker-core-activator.php';
 	Walker_Core_Activator::activate();
 }
 
@@ -91,19 +89,18 @@ function activate_walker_core()
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-walker-core-deactivator.php
  */
-function deactivate_walker_core()
-{
-	require_once plugin_dir_path(__FILE__) . 'includes/class-walker-core-deactivator.php';
+function deactivate_walker_core() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-walker-core-deactivator.php';
 	Walker_Core_Deactivator::deactivate();
 }
 
-register_activation_hook(__FILE__, 'activate_walker_core');
-register_deactivation_hook(__FILE__, 'deactivate_walker_core');
+register_activation_hook( __FILE__, 'activate_walker_core' );
+register_deactivation_hook( __FILE__, 'deactivate_walker_core' );
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path(__FILE__) . 'includes/class-walker-core.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-walker-core.php';
 /**
  * Begins execution of the plugin.
  *
@@ -113,8 +110,7 @@ require plugin_dir_path(__FILE__) . 'includes/class-walker-core.php';
  *
  * @since    1.0.0
  */
-function run_walker_core()
-{
+function run_walker_core() {
 	$plugin = new Walker_Core();
 	$plugin->run();
 }
